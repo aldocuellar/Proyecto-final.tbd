@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b9d1c820afe943c4afcad994e6e24165" Name="Diagram1">
+        <EntityTypeShape EntityType="ejemplofarmaciaModel.Entradas" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ejemplofarmaciaModel.Familia_Producto" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="ejemplofarmaciaModel.Marca" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ejemplofarmaciaModel.Producto" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ejemplofarmaciaModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="ejemplofarmaciaModel.Tipo_Producto" Width="1.5" PointX="0.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ejemplofarmaciaModel.Tipo_Usuario" Width="1.5" PointX="1.5" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ejemplofarmaciaModel.Usuario" Width="1.5" PointX="0.75" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="ejemplofarmaciaModel.Venta" Width="1.5" PointX="3" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ejemplofarmaciaModel.Detalle_Venta" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="ejemplofarmaciaModel.FK__Entradas__Id_Pro__398D8EEE" ManuallyRouted="false" />
+        <AssociationConnector Association="ejemplofarmaciaModel.FK__Producto__Id_Fam__32E0915F" ManuallyRouted="false" />
+        <AssociationConnector Association="ejemplofarmaciaModel.FK__Producto__Id_Mar__33D4B598" ManuallyRouted="false" />
+        <AssociationConnector Association="ejemplofarmaciaModel.FK__Detalle_V__Id_Pr__36B12243" ManuallyRouted="false" />
+        <AssociationConnector Association="ejemplofarmaciaModel.FK__Producto__Id_Tip__31EC6D26" ManuallyRouted="false" />
+        <AssociationConnector Association="ejemplofarmaciaModel.FK__Usuario__Id_Tipo__2C3393D0" ManuallyRouted="false" />
+        <AssociationConnector Association="ejemplofarmaciaModel.FK__Venta__Id_Usuari__2F10007B" ManuallyRouted="false" />
+        <AssociationConnector Association="ejemplofarmaciaModel.FK__Detalle_V__Ticke__35BCFE0A" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
