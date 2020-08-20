@@ -33,21 +33,21 @@
             this.btnCerrarFP = new System.Windows.Forms.Button();
             this.lblProductos = new System.Windows.Forms.Label();
             this.tabTU = new System.Windows.Forms.TabControl();
-            this.tabInsertTU = new System.Windows.Forms.TabPage();
+            this.tabInsertFP = new System.Windows.Forms.TabPage();
             this.btnInsertFP = new System.Windows.Forms.Button();
             this.lblNombreDeUsuario = new System.Windows.Forms.Label();
             this.lblidUsuario = new System.Windows.Forms.Label();
             this.tbNombreFPInsert = new System.Windows.Forms.TextBox();
             this.tbIdFPInsert = new System.Windows.Forms.TextBox();
-            this.tabModTU = new System.Windows.Forms.TabPage();
+            this.tabModFP = new System.Windows.Forms.TabPage();
             this.btnModFP = new System.Windows.Forms.Button();
-            this.tabDropTU = new System.Windows.Forms.TabPage();
+            this.tabDropFP = new System.Windows.Forms.TabPage();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tbNombreTUDrop = new System.Windows.Forms.TextBox();
             this.tbIdTUDrop = new System.Windows.Forms.TextBox();
             this.btnDropFP = new System.Windows.Forms.Button();
-            this.tabSelectTU = new System.Windows.Forms.TabPage();
+            this.tabSelectFP = new System.Windows.Forms.TabPage();
             this.lblConsulta = new System.Windows.Forms.Label();
             this.cbSelectFP = new System.Windows.Forms.ComboBox();
             this.btnSelectFP = new System.Windows.Forms.Button();
@@ -58,10 +58,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvFP)).BeginInit();
             this.panel1.SuspendLayout();
             this.tabTU.SuspendLayout();
-            this.tabInsertTU.SuspendLayout();
-            this.tabModTU.SuspendLayout();
-            this.tabDropTU.SuspendLayout();
-            this.tabSelectTU.SuspendLayout();
+            this.tabInsertFP.SuspendLayout();
+            this.tabModFP.SuspendLayout();
+            this.tabDropFP.SuspendLayout();
+            this.tabSelectFP.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvFP
@@ -111,30 +111,30 @@
             // 
             // tabTU
             // 
-            this.tabTU.Controls.Add(this.tabInsertTU);
-            this.tabTU.Controls.Add(this.tabModTU);
-            this.tabTU.Controls.Add(this.tabDropTU);
-            this.tabTU.Controls.Add(this.tabSelectTU);
+            this.tabTU.Controls.Add(this.tabInsertFP);
+            this.tabTU.Controls.Add(this.tabModFP);
+            this.tabTU.Controls.Add(this.tabDropFP);
+            this.tabTU.Controls.Add(this.tabSelectFP);
             this.tabTU.Location = new System.Drawing.Point(0, 57);
             this.tabTU.Name = "tabTU";
             this.tabTU.SelectedIndex = 0;
             this.tabTU.Size = new System.Drawing.Size(777, 337);
             this.tabTU.TabIndex = 7;
             // 
-            // tabInsertTU
+            // tabInsertFP
             // 
-            this.tabInsertTU.Controls.Add(this.btnInsertFP);
-            this.tabInsertTU.Controls.Add(this.lblNombreDeUsuario);
-            this.tabInsertTU.Controls.Add(this.lblidUsuario);
-            this.tabInsertTU.Controls.Add(this.tbNombreFPInsert);
-            this.tabInsertTU.Controls.Add(this.tbIdFPInsert);
-            this.tabInsertTU.Location = new System.Drawing.Point(4, 22);
-            this.tabInsertTU.Name = "tabInsertTU";
-            this.tabInsertTU.Padding = new System.Windows.Forms.Padding(3);
-            this.tabInsertTU.Size = new System.Drawing.Size(769, 311);
-            this.tabInsertTU.TabIndex = 0;
-            this.tabInsertTU.Text = "Insertar";
-            this.tabInsertTU.UseVisualStyleBackColor = true;
+            this.tabInsertFP.Controls.Add(this.btnInsertFP);
+            this.tabInsertFP.Controls.Add(this.lblNombreDeUsuario);
+            this.tabInsertFP.Controls.Add(this.lblidUsuario);
+            this.tabInsertFP.Controls.Add(this.tbNombreFPInsert);
+            this.tabInsertFP.Controls.Add(this.tbIdFPInsert);
+            this.tabInsertFP.Location = new System.Drawing.Point(4, 22);
+            this.tabInsertFP.Name = "tabInsertFP";
+            this.tabInsertFP.Padding = new System.Windows.Forms.Padding(3);
+            this.tabInsertFP.Size = new System.Drawing.Size(769, 311);
+            this.tabInsertFP.TabIndex = 0;
+            this.tabInsertFP.Text = "Insertar";
+            this.tabInsertFP.UseVisualStyleBackColor = true;
             // 
             // btnInsertFP
             // 
@@ -178,20 +178,20 @@
             this.tbIdFPInsert.Size = new System.Drawing.Size(58, 20);
             this.tbIdFPInsert.TabIndex = 22;
             // 
-            // tabModTU
+            // tabModFP
             // 
-            this.tabModTU.Controls.Add(this.label1);
-            this.tabModTU.Controls.Add(this.label2);
-            this.tabModTU.Controls.Add(this.tbNombreFPMod);
-            this.tabModTU.Controls.Add(this.tbIdFPMod);
-            this.tabModTU.Controls.Add(this.btnModFP);
-            this.tabModTU.Location = new System.Drawing.Point(4, 22);
-            this.tabModTU.Name = "tabModTU";
-            this.tabModTU.Padding = new System.Windows.Forms.Padding(3);
-            this.tabModTU.Size = new System.Drawing.Size(769, 311);
-            this.tabModTU.TabIndex = 1;
-            this.tabModTU.Text = "Modificar";
-            this.tabModTU.UseVisualStyleBackColor = true;
+            this.tabModFP.Controls.Add(this.label1);
+            this.tabModFP.Controls.Add(this.label2);
+            this.tabModFP.Controls.Add(this.tbNombreFPMod);
+            this.tabModFP.Controls.Add(this.tbIdFPMod);
+            this.tabModFP.Controls.Add(this.btnModFP);
+            this.tabModFP.Location = new System.Drawing.Point(4, 22);
+            this.tabModFP.Name = "tabModFP";
+            this.tabModFP.Padding = new System.Windows.Forms.Padding(3);
+            this.tabModFP.Size = new System.Drawing.Size(769, 311);
+            this.tabModFP.TabIndex = 1;
+            this.tabModFP.Text = "Modificar";
+            this.tabModFP.UseVisualStyleBackColor = true;
             // 
             // btnModFP
             // 
@@ -203,19 +203,19 @@
             this.btnModFP.Text = "Modificar Datos";
             this.btnModFP.UseVisualStyleBackColor = true;
             // 
-            // tabDropTU
+            // tabDropFP
             // 
-            this.tabDropTU.Controls.Add(this.label3);
-            this.tabDropTU.Controls.Add(this.label4);
-            this.tabDropTU.Controls.Add(this.tbNombreTUDrop);
-            this.tabDropTU.Controls.Add(this.tbIdTUDrop);
-            this.tabDropTU.Controls.Add(this.btnDropFP);
-            this.tabDropTU.Location = new System.Drawing.Point(4, 22);
-            this.tabDropTU.Name = "tabDropTU";
-            this.tabDropTU.Size = new System.Drawing.Size(769, 311);
-            this.tabDropTU.TabIndex = 2;
-            this.tabDropTU.Text = "Eliminar";
-            this.tabDropTU.UseVisualStyleBackColor = true;
+            this.tabDropFP.Controls.Add(this.label3);
+            this.tabDropFP.Controls.Add(this.label4);
+            this.tabDropFP.Controls.Add(this.tbNombreTUDrop);
+            this.tabDropFP.Controls.Add(this.tbIdTUDrop);
+            this.tabDropFP.Controls.Add(this.btnDropFP);
+            this.tabDropFP.Location = new System.Drawing.Point(4, 22);
+            this.tabDropFP.Name = "tabDropFP";
+            this.tabDropFP.Size = new System.Drawing.Size(769, 311);
+            this.tabDropFP.TabIndex = 2;
+            this.tabDropFP.Text = "Eliminar";
+            this.tabDropFP.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -260,22 +260,22 @@
             this.btnDropFP.Text = "Eliminar Datos";
             this.btnDropFP.UseVisualStyleBackColor = true;
             // 
-            // tabSelectTU
+            // tabSelectFP
             // 
-            this.tabSelectTU.Controls.Add(this.lblConsulta);
-            this.tabSelectTU.Controls.Add(this.cbSelectFP);
-            this.tabSelectTU.Controls.Add(this.btnSelectFP);
-            this.tabSelectTU.Location = new System.Drawing.Point(4, 22);
-            this.tabSelectTU.Name = "tabSelectTU";
-            this.tabSelectTU.Size = new System.Drawing.Size(769, 311);
-            this.tabSelectTU.TabIndex = 3;
-            this.tabSelectTU.Text = "Consultar";
-            this.tabSelectTU.UseVisualStyleBackColor = true;
+            this.tabSelectFP.Controls.Add(this.lblConsulta);
+            this.tabSelectFP.Controls.Add(this.cbSelectFP);
+            this.tabSelectFP.Controls.Add(this.btnSelectFP);
+            this.tabSelectFP.Location = new System.Drawing.Point(4, 22);
+            this.tabSelectFP.Name = "tabSelectFP";
+            this.tabSelectFP.Size = new System.Drawing.Size(769, 311);
+            this.tabSelectFP.TabIndex = 3;
+            this.tabSelectFP.Text = "Consultar";
+            this.tabSelectFP.UseVisualStyleBackColor = true;
             // 
             // lblConsulta
             // 
             this.lblConsulta.AutoSize = true;
-            this.lblConsulta.Location = new System.Drawing.Point(328, 99);
+            this.lblConsulta.Location = new System.Drawing.Point(326, 99);
             this.lblConsulta.Name = "lblConsulta";
             this.lblConsulta.Size = new System.Drawing.Size(109, 13);
             this.lblConsulta.TabIndex = 5;
@@ -284,7 +284,7 @@
             // cbSelectFP
             // 
             this.cbSelectFP.FormattingEnabled = true;
-            this.cbSelectFP.Location = new System.Drawing.Point(324, 128);
+            this.cbSelectFP.Location = new System.Drawing.Point(320, 128);
             this.cbSelectFP.Name = "cbSelectFP";
             this.cbSelectFP.Size = new System.Drawing.Size(121, 21);
             this.cbSelectFP.TabIndex = 4;
@@ -349,14 +349,14 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tabTU.ResumeLayout(false);
-            this.tabInsertTU.ResumeLayout(false);
-            this.tabInsertTU.PerformLayout();
-            this.tabModTU.ResumeLayout(false);
-            this.tabModTU.PerformLayout();
-            this.tabDropTU.ResumeLayout(false);
-            this.tabDropTU.PerformLayout();
-            this.tabSelectTU.ResumeLayout(false);
-            this.tabSelectTU.PerformLayout();
+            this.tabInsertFP.ResumeLayout(false);
+            this.tabInsertFP.PerformLayout();
+            this.tabModFP.ResumeLayout(false);
+            this.tabModFP.PerformLayout();
+            this.tabDropFP.ResumeLayout(false);
+            this.tabDropFP.PerformLayout();
+            this.tabSelectFP.ResumeLayout(false);
+            this.tabSelectFP.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -368,25 +368,25 @@
         private System.Windows.Forms.Button btnCerrarFP;
         private System.Windows.Forms.Label lblProductos;
         private System.Windows.Forms.TabControl tabTU;
-        private System.Windows.Forms.TabPage tabInsertTU;
+        private System.Windows.Forms.TabPage tabInsertFP;
         private System.Windows.Forms.Button btnInsertFP;
         private System.Windows.Forms.Label lblNombreDeUsuario;
         private System.Windows.Forms.Label lblidUsuario;
         private System.Windows.Forms.TextBox tbNombreFPInsert;
         private System.Windows.Forms.TextBox tbIdFPInsert;
-        private System.Windows.Forms.TabPage tabModTU;
+        private System.Windows.Forms.TabPage tabModFP;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tbNombreFPMod;
         private System.Windows.Forms.TextBox tbIdFPMod;
         private System.Windows.Forms.Button btnModFP;
-        private System.Windows.Forms.TabPage tabDropTU;
+        private System.Windows.Forms.TabPage tabDropFP;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tbNombreTUDrop;
         private System.Windows.Forms.TextBox tbIdTUDrop;
         private System.Windows.Forms.Button btnDropFP;
-        private System.Windows.Forms.TabPage tabSelectTU;
+        private System.Windows.Forms.TabPage tabSelectFP;
         private System.Windows.Forms.Label lblConsulta;
         private System.Windows.Forms.ComboBox cbSelectFP;
         private System.Windows.Forms.Button btnSelectFP;

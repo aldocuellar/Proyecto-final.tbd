@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvProductos = new System.Windows.Forms.DataGridView();
+            this.dgvTU = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnCerrarTU = new System.Windows.Forms.Button();
             this.lblProductos = new System.Windows.Forms.Label();
@@ -55,7 +55,7 @@
             this.lblConsulta = new System.Windows.Forms.Label();
             this.cbSelectTU = new System.Windows.Forms.ComboBox();
             this.btnSelectTU = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTU)).BeginInit();
             this.panel1.SuspendLayout();
             this.tabTU.SuspendLayout();
             this.tabInsertTU.SuspendLayout();
@@ -64,13 +64,13 @@
             this.tabSelectTU.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dgvProductos
+            // dgvTU
             // 
-            this.dgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProductos.Location = new System.Drawing.Point(4, 395);
-            this.dgvProductos.Name = "dgvProductos";
-            this.dgvProductos.Size = new System.Drawing.Size(769, 150);
-            this.dgvProductos.TabIndex = 6;
+            this.dgvTU.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTU.Location = new System.Drawing.Point(4, 395);
+            this.dgvTU.Name = "dgvTU";
+            this.dgvTU.Size = new System.Drawing.Size(769, 150);
+            this.dgvTU.TabIndex = 6;
             // 
             // panel1
             // 
@@ -340,13 +340,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(777, 547);
-            this.Controls.Add(this.dgvProductos);
+            this.Controls.Add(this.dgvTU);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tabTU);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TipoUsuarioForm";
             this.Text = "TipoUsuarioForm";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTU)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tabTU.ResumeLayout(false);
@@ -364,7 +364,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvProductos;
+        private System.Windows.Forms.DataGridView dgvTU;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnCerrarTU;
         private System.Windows.Forms.Label lblProductos;

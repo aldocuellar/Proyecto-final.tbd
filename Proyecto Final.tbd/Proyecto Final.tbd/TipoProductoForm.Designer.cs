@@ -28,49 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvTU = new System.Windows.Forms.DataGridView();
+            this.dgvTP = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnCerrarTP = new System.Windows.Forms.Button();
             this.lblProductos = new System.Windows.Forms.Label();
             this.tabTU = new System.Windows.Forms.TabControl();
-            this.tabInsertTU = new System.Windows.Forms.TabPage();
+            this.tabInsertMP = new System.Windows.Forms.TabPage();
             this.btnInsertTP = new System.Windows.Forms.Button();
             this.lblNombreDeUsuario = new System.Windows.Forms.Label();
             this.lblidUsuario = new System.Windows.Forms.Label();
             this.tbNombreTPInsert = new System.Windows.Forms.TextBox();
             this.tbIdTUPInsert = new System.Windows.Forms.TextBox();
-            this.tabModTU = new System.Windows.Forms.TabPage();
+            this.tabModMP = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tbNombreTPMod = new System.Windows.Forms.TextBox();
             this.tbIdTPMod = new System.Windows.Forms.TextBox();
             this.btnModTP = new System.Windows.Forms.Button();
-            this.tabDropTU = new System.Windows.Forms.TabPage();
+            this.tabDropMP = new System.Windows.Forms.TabPage();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tbNombreTPDrop = new System.Windows.Forms.TextBox();
             this.tbIdTPDrop = new System.Windows.Forms.TextBox();
             this.btnDropTP = new System.Windows.Forms.Button();
-            this.tabSelectTU = new System.Windows.Forms.TabPage();
+            this.tabSelectMP = new System.Windows.Forms.TabPage();
             this.lblConsulta = new System.Windows.Forms.Label();
             this.cbSelectTP = new System.Windows.Forms.ComboBox();
             this.btnSelectTP = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTU)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTP)).BeginInit();
             this.panel1.SuspendLayout();
             this.tabTU.SuspendLayout();
-            this.tabInsertTU.SuspendLayout();
-            this.tabModTU.SuspendLayout();
-            this.tabDropTU.SuspendLayout();
-            this.tabSelectTU.SuspendLayout();
+            this.tabInsertMP.SuspendLayout();
+            this.tabModMP.SuspendLayout();
+            this.tabDropMP.SuspendLayout();
+            this.tabSelectMP.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dgvTU
+            // dgvTP
             // 
-            this.dgvTU.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTU.Location = new System.Drawing.Point(4, 396);
-            this.dgvTU.Name = "dgvTU";
-            this.dgvTU.Size = new System.Drawing.Size(769, 150);
-            this.dgvTU.TabIndex = 9;
+            this.dgvTP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTP.Location = new System.Drawing.Point(4, 396);
+            this.dgvTP.Name = "dgvTP";
+            this.dgvTP.Size = new System.Drawing.Size(769, 150);
+            this.dgvTP.TabIndex = 9;
             // 
             // panel1
             // 
@@ -111,30 +111,30 @@
             // 
             // tabTU
             // 
-            this.tabTU.Controls.Add(this.tabInsertTU);
-            this.tabTU.Controls.Add(this.tabModTU);
-            this.tabTU.Controls.Add(this.tabDropTU);
-            this.tabTU.Controls.Add(this.tabSelectTU);
+            this.tabTU.Controls.Add(this.tabInsertMP);
+            this.tabTU.Controls.Add(this.tabModMP);
+            this.tabTU.Controls.Add(this.tabDropMP);
+            this.tabTU.Controls.Add(this.tabSelectMP);
             this.tabTU.Location = new System.Drawing.Point(0, 57);
             this.tabTU.Name = "tabTU";
             this.tabTU.SelectedIndex = 0;
             this.tabTU.Size = new System.Drawing.Size(777, 337);
             this.tabTU.TabIndex = 7;
             // 
-            // tabInsertTU
+            // tabInsertMP
             // 
-            this.tabInsertTU.Controls.Add(this.btnInsertTP);
-            this.tabInsertTU.Controls.Add(this.lblNombreDeUsuario);
-            this.tabInsertTU.Controls.Add(this.lblidUsuario);
-            this.tabInsertTU.Controls.Add(this.tbNombreTPInsert);
-            this.tabInsertTU.Controls.Add(this.tbIdTUPInsert);
-            this.tabInsertTU.Location = new System.Drawing.Point(4, 22);
-            this.tabInsertTU.Name = "tabInsertTU";
-            this.tabInsertTU.Padding = new System.Windows.Forms.Padding(3);
-            this.tabInsertTU.Size = new System.Drawing.Size(769, 311);
-            this.tabInsertTU.TabIndex = 0;
-            this.tabInsertTU.Text = "Insertar";
-            this.tabInsertTU.UseVisualStyleBackColor = true;
+            this.tabInsertMP.Controls.Add(this.btnInsertTP);
+            this.tabInsertMP.Controls.Add(this.lblNombreDeUsuario);
+            this.tabInsertMP.Controls.Add(this.lblidUsuario);
+            this.tabInsertMP.Controls.Add(this.tbNombreTPInsert);
+            this.tabInsertMP.Controls.Add(this.tbIdTUPInsert);
+            this.tabInsertMP.Location = new System.Drawing.Point(4, 22);
+            this.tabInsertMP.Name = "tabInsertMP";
+            this.tabInsertMP.Padding = new System.Windows.Forms.Padding(3);
+            this.tabInsertMP.Size = new System.Drawing.Size(769, 311);
+            this.tabInsertMP.TabIndex = 0;
+            this.tabInsertMP.Text = "Insertar";
+            this.tabInsertMP.UseVisualStyleBackColor = true;
             // 
             // btnInsertTP
             // 
@@ -179,20 +179,20 @@
             this.tbIdTUPInsert.Size = new System.Drawing.Size(58, 20);
             this.tbIdTUPInsert.TabIndex = 22;
             // 
-            // tabModTU
+            // tabModMP
             // 
-            this.tabModTU.Controls.Add(this.label1);
-            this.tabModTU.Controls.Add(this.label2);
-            this.tabModTU.Controls.Add(this.tbNombreTPMod);
-            this.tabModTU.Controls.Add(this.tbIdTPMod);
-            this.tabModTU.Controls.Add(this.btnModTP);
-            this.tabModTU.Location = new System.Drawing.Point(4, 22);
-            this.tabModTU.Name = "tabModTU";
-            this.tabModTU.Padding = new System.Windows.Forms.Padding(3);
-            this.tabModTU.Size = new System.Drawing.Size(769, 311);
-            this.tabModTU.TabIndex = 1;
-            this.tabModTU.Text = "Modificar";
-            this.tabModTU.UseVisualStyleBackColor = true;
+            this.tabModMP.Controls.Add(this.label1);
+            this.tabModMP.Controls.Add(this.label2);
+            this.tabModMP.Controls.Add(this.tbNombreTPMod);
+            this.tabModMP.Controls.Add(this.tbIdTPMod);
+            this.tabModMP.Controls.Add(this.btnModTP);
+            this.tabModMP.Location = new System.Drawing.Point(4, 22);
+            this.tabModMP.Name = "tabModMP";
+            this.tabModMP.Padding = new System.Windows.Forms.Padding(3);
+            this.tabModMP.Size = new System.Drawing.Size(769, 311);
+            this.tabModMP.TabIndex = 1;
+            this.tabModMP.Text = "Modificar";
+            this.tabModMP.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -237,19 +237,19 @@
             this.btnModTP.Text = "Modificar Datos";
             this.btnModTP.UseVisualStyleBackColor = true;
             // 
-            // tabDropTU
+            // tabDropMP
             // 
-            this.tabDropTU.Controls.Add(this.label3);
-            this.tabDropTU.Controls.Add(this.label4);
-            this.tabDropTU.Controls.Add(this.tbNombreTPDrop);
-            this.tabDropTU.Controls.Add(this.tbIdTPDrop);
-            this.tabDropTU.Controls.Add(this.btnDropTP);
-            this.tabDropTU.Location = new System.Drawing.Point(4, 22);
-            this.tabDropTU.Name = "tabDropTU";
-            this.tabDropTU.Size = new System.Drawing.Size(769, 311);
-            this.tabDropTU.TabIndex = 2;
-            this.tabDropTU.Text = "Eliminar";
-            this.tabDropTU.UseVisualStyleBackColor = true;
+            this.tabDropMP.Controls.Add(this.label3);
+            this.tabDropMP.Controls.Add(this.label4);
+            this.tabDropMP.Controls.Add(this.tbNombreTPDrop);
+            this.tabDropMP.Controls.Add(this.tbIdTPDrop);
+            this.tabDropMP.Controls.Add(this.btnDropTP);
+            this.tabDropMP.Location = new System.Drawing.Point(4, 22);
+            this.tabDropMP.Name = "tabDropMP";
+            this.tabDropMP.Size = new System.Drawing.Size(769, 311);
+            this.tabDropMP.TabIndex = 2;
+            this.tabDropMP.Text = "Eliminar";
+            this.tabDropMP.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -294,17 +294,17 @@
             this.btnDropTP.Text = "Eliminar Datos";
             this.btnDropTP.UseVisualStyleBackColor = true;
             // 
-            // tabSelectTU
+            // tabSelectMP
             // 
-            this.tabSelectTU.Controls.Add(this.lblConsulta);
-            this.tabSelectTU.Controls.Add(this.cbSelectTP);
-            this.tabSelectTU.Controls.Add(this.btnSelectTP);
-            this.tabSelectTU.Location = new System.Drawing.Point(4, 22);
-            this.tabSelectTU.Name = "tabSelectTU";
-            this.tabSelectTU.Size = new System.Drawing.Size(769, 311);
-            this.tabSelectTU.TabIndex = 3;
-            this.tabSelectTU.Text = "Consultar";
-            this.tabSelectTU.UseVisualStyleBackColor = true;
+            this.tabSelectMP.Controls.Add(this.lblConsulta);
+            this.tabSelectMP.Controls.Add(this.cbSelectTP);
+            this.tabSelectMP.Controls.Add(this.btnSelectTP);
+            this.tabSelectMP.Location = new System.Drawing.Point(4, 22);
+            this.tabSelectMP.Name = "tabSelectMP";
+            this.tabSelectMP.Size = new System.Drawing.Size(769, 311);
+            this.tabSelectMP.TabIndex = 3;
+            this.tabSelectMP.Text = "Consultar";
+            this.tabSelectMP.UseVisualStyleBackColor = true;
             // 
             // lblConsulta
             // 
@@ -340,54 +340,54 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(777, 547);
-            this.Controls.Add(this.dgvTU);
+            this.Controls.Add(this.dgvTP);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tabTU);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TipoProductoForm";
             this.Text = "TipoProductoForm";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTU)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTP)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tabTU.ResumeLayout(false);
-            this.tabInsertTU.ResumeLayout(false);
-            this.tabInsertTU.PerformLayout();
-            this.tabModTU.ResumeLayout(false);
-            this.tabModTU.PerformLayout();
-            this.tabDropTU.ResumeLayout(false);
-            this.tabDropTU.PerformLayout();
-            this.tabSelectTU.ResumeLayout(false);
-            this.tabSelectTU.PerformLayout();
+            this.tabInsertMP.ResumeLayout(false);
+            this.tabInsertMP.PerformLayout();
+            this.tabModMP.ResumeLayout(false);
+            this.tabModMP.PerformLayout();
+            this.tabDropMP.ResumeLayout(false);
+            this.tabDropMP.PerformLayout();
+            this.tabSelectMP.ResumeLayout(false);
+            this.tabSelectMP.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvTU;
+        private System.Windows.Forms.DataGridView dgvTP;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnCerrarTP;
         private System.Windows.Forms.Label lblProductos;
         private System.Windows.Forms.TabControl tabTU;
-        private System.Windows.Forms.TabPage tabInsertTU;
+        private System.Windows.Forms.TabPage tabInsertMP;
         private System.Windows.Forms.Button btnInsertTP;
         private System.Windows.Forms.Label lblNombreDeUsuario;
         private System.Windows.Forms.Label lblidUsuario;
         private System.Windows.Forms.TextBox tbNombreTPInsert;
         private System.Windows.Forms.TextBox tbIdTUPInsert;
-        private System.Windows.Forms.TabPage tabModTU;
+        private System.Windows.Forms.TabPage tabModMP;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tbNombreTPMod;
         private System.Windows.Forms.TextBox tbIdTPMod;
         private System.Windows.Forms.Button btnModTP;
-        private System.Windows.Forms.TabPage tabDropTU;
+        private System.Windows.Forms.TabPage tabDropMP;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tbNombreTPDrop;
         private System.Windows.Forms.TextBox tbIdTPDrop;
         private System.Windows.Forms.Button btnDropTP;
-        private System.Windows.Forms.TabPage tabSelectTU;
+        private System.Windows.Forms.TabPage tabSelectMP;
         private System.Windows.Forms.Label lblConsulta;
         private System.Windows.Forms.ComboBox cbSelectTP;
         private System.Windows.Forms.Button btnSelectTP;
