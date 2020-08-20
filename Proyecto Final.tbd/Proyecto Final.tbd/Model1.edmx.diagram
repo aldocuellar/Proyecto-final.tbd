@@ -14,7 +14,7 @@
         <EntityTypeShape EntityType="ejemplofarmaciaModel.Tipo_Usuario" Width="1.5" PointX="1.5" PointY="14.75" IsExpanded="true" />
         <EntityTypeShape EntityType="ejemplofarmaciaModel.Usuario" Width="1.5" PointX="0.75" PointY="10" IsExpanded="true" />
         <EntityTypeShape EntityType="ejemplofarmaciaModel.Venta" Width="1.5" PointX="3" PointY="10.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="ejemplofarmaciaModel.Detalle_Venta" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ejemplofarmaciaModel.Detalle_Venta" Width="1.5" PointX="7" PointY="5.375" IsExpanded="true" />
         <AssociationConnector Association="ejemplofarmaciaModel.FK__Entradas__Id_Pro__398D8EEE" ManuallyRouted="false" />
         <AssociationConnector Association="ejemplofarmaciaModel.FK__Producto__Id_Fam__32E0915F" ManuallyRouted="false" />
         <AssociationConnector Association="ejemplofarmaciaModel.FK__Producto__Id_Mar__33D4B598" ManuallyRouted="false" />

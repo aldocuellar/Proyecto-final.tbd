@@ -1,0 +1,17 @@
+C:\Users\hit_h\Documents\ITT\Verano 2020\Tópicos de Base de Datos\Ejemplo\Proyecto Final.tbd\Proyecto Final.tbd\bin\Debug\Proyecto Final.tbd.exe.config
+C:\Users\hit_h\Documents\ITT\Verano 2020\Tópicos de Base de Datos\Ejemplo\Proyecto Final.tbd\Proyecto Final.tbd\bin\Debug\Proyecto Final.tbd.exe
+C:\Users\hit_h\Documents\ITT\Verano 2020\Tópicos de Base de Datos\Ejemplo\Proyecto Final.tbd\Proyecto Final.tbd\bin\Debug\Proyecto Final.tbd.pdb
+C:\Users\hit_h\Documents\ITT\Verano 2020\Tópicos de Base de Datos\Ejemplo\Proyecto Final.tbd\Proyecto Final.tbd\bin\Debug\EntityFramework.dll
+C:\Users\hit_h\Documents\ITT\Verano 2020\Tópicos de Base de Datos\Ejemplo\Proyecto Final.tbd\Proyecto Final.tbd\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hit_h\Documents\ITT\Verano 2020\Tópicos de Base de Datos\Ejemplo\Proyecto Final.tbd\Proyecto Final.tbd\bin\Debug\EntityFramework.xml
+C:\Users\hit_h\Documents\ITT\Verano 2020\Tópicos de Base de Datos\Ejemplo\Proyecto Final.tbd\Proyecto Final.tbd\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hit_h\Documents\ITT\Verano 2020\Tópicos de Base de Datos\Ejemplo\Proyecto Final.tbd\Proyecto Final.tbd\obj\Debug\Proyecto Final.tbd.csprojAssemblyReference.cache
+C:\Users\hit_h\Documents\ITT\Verano 2020\Tópicos de Base de Datos\Ejemplo\Proyecto Final.tbd\Proyecto Final.tbd\obj\Debug\Proyecto_Final.tbd.Form1.resources
+C:\Users\hit_h\Documents\ITT\Verano 2020\Tópicos de Base de Datos\Ejemplo\Proyecto Final.tbd\Proyecto Final.tbd\obj\Debug\Proyecto_Final.tbd.Properties.Resources.resources
+C:\Users\hit_h\Documents\ITT\Verano 2020\Tópicos de Base de Datos\Ejemplo\Proyecto Final.tbd\Proyecto Final.tbd\obj\Debug\Proyecto Final.tbd.csproj.GenerateResource.cache
+C:\Users\hit_h\Documents\ITT\Verano 2020\Tópicos de Base de Datos\Ejemplo\Proyecto Final.tbd\Proyecto Final.tbd\obj\Debug\Proyecto Final.tbd.csproj.CoreCompileInputs.cache
+C:\Users\hit_h\Documents\ITT\Verano 2020\Tópicos de Base de Datos\Ejemplo\Proyecto Final.tbd\Proyecto Final.tbd\obj\Debug\Proyecto Final.tbd.csproj.CopyComplete
+C:\Users\hit_h\Documents\ITT\Verano 2020\Tópicos de Base de Datos\Ejemplo\Proyecto Final.tbd\Proyecto Final.tbd\obj\Debug\Proyecto Final.tbd.exe
+C:\Users\hit_h\Documents\ITT\Verano 2020\Tópicos de Base de Datos\Ejemplo\Proyecto Final.tbd\Proyecto Final.tbd\obj\Debug\Proyecto Final.tbd.pdb
+C:\Users\hit_h\Documents\ITT\Verano 2020\Tópicos de Base de Datos\Ejemplo\Proyecto Final.tbd\Proyecto Final.tbd\obj\Debug\Proyecto_Final.tbd.ProductoForm.resources
+C:\Users\hit_h\Documents\ITT\Verano 2020\Tópicos de Base de Datos\Ejemplo\Proyecto Final.tbd\Proyecto Final.tbd\obj\Debug\Proyecto_Final.tbd.UsuarioForm.resources

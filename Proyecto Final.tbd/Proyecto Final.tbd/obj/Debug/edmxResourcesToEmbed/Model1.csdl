@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ejemplofarmaciaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Entradas">
+    <Key>
+      <PropertyRef Name="Id_Folio" />
+    </Key>
+    <Property Name="Id_Folio" Type="Int32" Nullable="false" />
+    <Property Name="Id_Producto_FK" Type="Int32" Nullable="false" />
+    <Property Name="Cantidad" Type="Int32" Nullable="false" />
+    <Property Name="Precio" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="Producto" Relationship="Self.FK__Entradas__Id_Pro__398D8EEE" FromRole="Entradas" ToRole="Producto" />
+  </EntityType>
+  <EntityType Name="Familia_Producto">
+    <Key>
+      <PropertyRef Name="Id_Familia" />
+    </Key>
+    <Property Name="Id_Familia" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_Fam" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Producto" Relationship="Self.FK__Producto__Id_Fam__32E0915F" FromRole="Familia_Producto" ToRole="Producto" />
+  </EntityType>
+  <EntityType Name="Marca">
+    <Key>
+      <PropertyRef Name="Id_Marca" />
+    </Key>
+    <Property Name="Id_Marca" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_Marca" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Producto" Relationship="Self.FK__Producto__Id_Mar__33D4B598" FromRole="Marca" ToRole="Producto" />
+  </EntityType>
+  <EntityType Name="Producto">
+    <Key>
+      <PropertyRef Name="Id_Producto" />
+    </Key>
+    <Property Name="Id_Producto" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_Producto" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Precio" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Existencia" Type="Int32" Nullable="false" />
+    <Property Name="Id_Tipo_Producto_FK" Type="Int32" Nullable="false" />
+    <Property Name="Id_Familia_FK" Type="Int32" Nullable="false" />
+    <Property Name="Id_Marca_FK" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Entradas" Relationship="Self.FK__Entradas__Id_Pro__398D8EEE" FromRole="Producto" ToRole="Entradas" />
+    <NavigationProperty Name="Familia_Producto" Relationship="Self.FK__Producto__Id_Fam__32E0915F" FromRole="Producto" ToRole="Familia_Producto" />
+    <NavigationProperty Name="Marca" Relationship="Self.FK__Producto__Id_Mar__33D4B598" FromRole="Producto" ToRole="Marca" />
+    <NavigationProperty Name="Detalle_Venta" Relationship="Self.FK__Detalle_V__Id_Pr__36B12243" FromRole="Producto" ToRole="Detalle_Venta" />
+    <NavigationProperty Name="Tipo_Producto" Relationship="Self.FK__Producto__Id_Tip__31EC6D26" FromRole="Producto" ToRole="Tipo_Producto" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Tipo_Producto">
+    <Key>
+      <PropertyRef Name="Id_Tipo_Producto" />
+    </Key>
+    <Property Name="Id_Tipo_Producto" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_TP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Producto" Relationship="Self.FK__Producto__Id_Tip__31EC6D26" FromRole="Tipo_Producto" ToRole="Producto" />
+  </EntityType>
+  <EntityType Name="Tipo_Usuario">
+    <Key>
+      <PropertyRef Name="Id_Tipo_Usuario" />
+    </Key>
+    <Property Name="Id_Tipo_Usuario" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_TU" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Usuario" Relationship="Self.FK__Usuario__Id_Tipo__2C3393D0" FromRole="Tipo_Usuario" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="Id_Usuario" />
+    </Key>
+    <Property Name="Id_Usuario" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_Usuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Contraseña" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Ap_Paterno" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Ap_Materno" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Fecha_Nacimiento" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Genero" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Id_Tipo_Usuario_FK" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Tipo_Usuario" Relationship="Self.FK__Usuario__Id_Tipo__2C3393D0" FromRole="Usuario" ToRole="Tipo_Usuario" />
+    <NavigationProperty Name="Venta" Relationship="Self.FK__Venta__Id_Usuari__2F10007B" FromRole="Usuario" ToRole="Venta" />
+  </EntityType>
+  <EntityType Name="Venta">
+    <Key>
+      <PropertyRef Name="Ticket" />
+    </Key>
+    <Property Name="Ticket" Type="Int32" Nullable="false" />
+    <Property Name="Total" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Hora" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Id_Usuario_FK" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Usuario" Relationship="Self.FK__Venta__Id_Usuari__2F10007B" FromRole="Venta" ToRole="Usuario" />
+    <NavigationProperty Name="Detalle_Venta" Relationship="Self.FK__Detalle_V__Ticke__35BCFE0A" FromRole="Venta" ToRole="Detalle_Venta" />
+  </EntityType>
+  <EntityType Name="Detalle_Venta">
+    <Key>
+      <PropertyRef Name="Ticket_FK" />
+      <PropertyRef Name="Id_Producto_FK" />
+      <PropertyRef Name="Cantidad" />
+      <PropertyRef Name="Precio" />
+    </Key>
+    <Property Name="Ticket_FK" Type="Int32" Nullable="false" />
+    <Property Name="Id_Producto_FK" Type="Int32" Nullable="false" />
+    <Property Name="Cantidad" Type="Int32" Nullable="false" />
+    <Property Name="Precio" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <NavigationProperty Name="Producto" Relationship="Self.FK__Detalle_V__Id_Pr__36B12243" FromRole="Detalle_Venta" ToRole="Producto" />
+    <NavigationProperty Name="Venta" Relationship="Self.FK__Detalle_V__Ticke__35BCFE0A" FromRole="Detalle_Venta" ToRole="Venta" />
+  </EntityType>
+  <Association Name="FK__Entradas__Id_Pro__398D8EEE">
+    <End Role="Producto" Type="Self.Producto" Multiplicity="1" />
+    <End Role="Entradas" Type="Self.Entradas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producto">
+        <PropertyRef Name="Id_Producto" />
+      </Principal>
+      <Dependent Role="Entradas">
+        <PropertyRef Name="Id_Producto_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Producto__Id_Fam__32E0915F">
+    <End Role="Familia_Producto" Type="Self.Familia_Producto" Multiplicity="1" />
+    <End Role="Producto" Type="Self.Producto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Familia_Producto">
+        <PropertyRef Name="Id_Familia" />
+      </Principal>
+      <Dependent Role="Producto">
+        <PropertyRef Name="Id_Familia_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Producto__Id_Mar__33D4B598">
+    <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+    <End Role="Producto" Type="Self.Producto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Marca">
+        <PropertyRef Name="Id_Marca" />
+      </Principal>
+      <Dependent Role="Producto">
+        <PropertyRef Name="Id_Marca_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Detalle_V__Id_Pr__36B12243">
+    <End Role="Producto" Type="Self.Producto" Multiplicity="1" />
+    <End Role="Detalle_Venta" Type="Self.Detalle_Venta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producto">
+        <PropertyRef Name="Id_Producto" />
+      </Principal>
+      <Dependent Role="Detalle_Venta">
+        <PropertyRef Name="Id_Producto_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Producto__Id_Tip__31EC6D26">
+    <End Role="Tipo_Producto" Type="Self.Tipo_Producto" Multiplicity="1" />
+    <End Role="Producto" Type="Self.Producto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tipo_Producto">
+        <PropertyRef Name="Id_Tipo_Producto" />
+      </Principal>
+      <Dependent Role="Producto">
+        <PropertyRef Name="Id_Tipo_Producto_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Usuario__Id_Tipo__2C3393D0">
+    <End Role="Tipo_Usuario" Type="Self.Tipo_Usuario" Multiplicity="1" />
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tipo_Usuario">
+        <PropertyRef Name="Id_Tipo_Usuario" />
+      </Principal>
+      <Dependent Role="Usuario">
+        <PropertyRef Name="Id_Tipo_Usuario_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Venta__Id_Usuari__2F10007B">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="Venta" Type="Self.Venta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="Id_Usuario" />
+      </Principal>
+      <Dependent Role="Venta">
+        <PropertyRef Name="Id_Usuario_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Detalle_V__Ticke__35BCFE0A">
+    <End Role="Venta" Type="Self.Venta" Multiplicity="1" />
+    <End Role="Detalle_Venta" Type="Self.Detalle_Venta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Venta">
+        <PropertyRef Name="Ticket" />
+      </Principal>
+      <Dependent Role="Detalle_Venta">
+        <PropertyRef Name="Ticket_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ejemplofarmaciaEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Entradas" EntityType="Self.Entradas" />
+    <EntitySet Name="Familia_Producto" EntityType="Self.Familia_Producto" />
+    <EntitySet Name="Marca" EntityType="Self.Marca" />
+    <EntitySet Name="Producto" EntityType="Self.Producto" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="Tipo_Producto" EntityType="Self.Tipo_Producto" />
+    <EntitySet Name="Tipo_Usuario" EntityType="Self.Tipo_Usuario" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" />
+    <EntitySet Name="Venta" EntityType="Self.Venta" />
+    <EntitySet Name="Detalle_Venta" EntityType="Self.Detalle_Venta" />
+    <AssociationSet Name="FK__Entradas__Id_Pro__398D8EEE" Association="Self.FK__Entradas__Id_Pro__398D8EEE">
+      <End Role="Producto" EntitySet="Producto" />
+      <End Role="Entradas" EntitySet="Entradas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Producto__Id_Fam__32E0915F" Association="Self.FK__Producto__Id_Fam__32E0915F">
+      <End Role="Familia_Producto" EntitySet="Familia_Producto" />
+      <End Role="Producto" EntitySet="Producto" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Producto__Id_Mar__33D4B598" Association="Self.FK__Producto__Id_Mar__33D4B598">
+      <End Role="Marca" EntitySet="Marca" />
+      <End Role="Producto" EntitySet="Producto" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Detalle_V__Id_Pr__36B12243" Association="Self.FK__Detalle_V__Id_Pr__36B12243">
+      <End Role="Producto" EntitySet="Producto" />
+      <End Role="Detalle_Venta" EntitySet="Detalle_Venta" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Producto__Id_Tip__31EC6D26" Association="Self.FK__Producto__Id_Tip__31EC6D26">
+      <End Role="Tipo_Producto" EntitySet="Tipo_Producto" />
+      <End Role="Producto" EntitySet="Producto" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Usuario__Id_Tipo__2C3393D0" Association="Self.FK__Usuario__Id_Tipo__2C3393D0">
+      <End Role="Tipo_Usuario" EntitySet="Tipo_Usuario" />
+      <End Role="Usuario" EntitySet="Usuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Venta__Id_Usuari__2F10007B" Association="Self.FK__Venta__Id_Usuari__2F10007B">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Venta" EntitySet="Venta" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Detalle_V__Ticke__35BCFE0A" Association="Self.FK__Detalle_V__Ticke__35BCFE0A">
+      <End Role="Venta" EntitySet="Venta" />
+      <End Role="Detalle_Venta" EntitySet="Detalle_Venta" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
