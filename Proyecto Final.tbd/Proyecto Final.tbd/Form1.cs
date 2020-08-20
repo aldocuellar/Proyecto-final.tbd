@@ -65,6 +65,29 @@ namespace Proyecto_Final.tbd
             openChildForm(new ProductoForm());
         }
 
+        private void btnTU_Click(object sender, EventArgs e)
+        {
+            openChildForm(new TipoUsuarioForm());
+        }
 
+        private void btnTP_Click(object sender, EventArgs e)
+        {
+            openChildForm(new TipoProductoForm());
+        }
+
+        private void btnFP_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FamiliaForm());
+        }
+
+        private void btnVenta_Click(object sender, EventArgs e)
+        {
+            openChildForm(new VentaForm());
+        }
+
+        private void btnMP_Click(object sender, EventArgs e)
+        {
+            openChildForm(new MarcaForm());
+        }
     }
 }

@@ -55,11 +55,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DetalleVentaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetalleVentaForm.Designer.cs">
+      <DependentUpon>DetalleVentaForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Detalle_Venta.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entradas.cs">
       <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntradasForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EntradasForm.Designer.cs">
+      <DependentUpon>EntradasForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FamiliaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FamiliaForm.Designer.cs">
+      <DependentUpon>FamiliaForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Familia_Producto.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -72,6 +90,12 @@
     </Compile>
     <Compile Include="Marca.cs">
       <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MarcaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarcaForm.Designer.cs">
+      <DependentUpon>MarcaForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
@@ -102,6 +126,18 @@
     <Compile Include="sysdiagrams.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="TipoProductoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipoProductoForm.Designer.cs">
+      <DependentUpon>TipoProductoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TipoUsuarioForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipoUsuarioForm.Designer.cs">
+      <DependentUpon>TipoUsuarioForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tipo_Producto.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -119,6 +155,12 @@
     </Compile>
     <Compile Include="Venta.cs">
       <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VentaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentaForm.Designer.cs">
+      <DependentUpon>VentaForm.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
