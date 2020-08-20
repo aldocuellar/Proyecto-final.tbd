@@ -89,5 +89,15 @@ namespace Proyecto_Final.tbd
         {
             openChildForm(new MarcaForm());
         }
+
+        private void btnDV_Click(object sender, EventArgs e)
+        {
+            openChildForm(new DetalleVentaForm());
+        }
+
+        private void btnEntradas_Click(object sender, EventArgs e)
+        {
+            openChildForm(new EntradasForm());
+        }
     }
 }

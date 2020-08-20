@@ -149,7 +149,9 @@
             this.btnEntradas.Size = new System.Drawing.Size(196, 40);
             this.btnEntradas.TabIndex = 7;
             this.btnEntradas.Text = "Entradas";
+            this.btnEntradas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEntradas.UseVisualStyleBackColor = true;
+            this.btnEntradas.Click += new System.EventHandler(this.btnEntradas_Click);
             // 
             // btnDV
             // 
@@ -164,7 +166,9 @@
             this.btnDV.Size = new System.Drawing.Size(196, 40);
             this.btnDV.TabIndex = 6;
             this.btnDV.Text = "Detalle Venta";
+            this.btnDV.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDV.UseVisualStyleBackColor = true;
+            this.btnDV.Click += new System.EventHandler(this.btnDV_Click);
             // 
             // btnMP
             // 
@@ -179,6 +183,7 @@
             this.btnMP.Size = new System.Drawing.Size(196, 40);
             this.btnMP.TabIndex = 5;
             this.btnMP.Text = "Marca";
+            this.btnMP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMP.UseVisualStyleBackColor = true;
             this.btnMP.Click += new System.EventHandler(this.btnMP_Click);
             // 
@@ -195,6 +200,7 @@
             this.btnVenta.Size = new System.Drawing.Size(196, 40);
             this.btnVenta.TabIndex = 4;
             this.btnVenta.Text = "Venta";
+            this.btnVenta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVenta.UseVisualStyleBackColor = true;
             this.btnVenta.Click += new System.EventHandler(this.btnVenta_Click);
             // 
@@ -211,6 +217,7 @@
             this.btnFP.Size = new System.Drawing.Size(196, 40);
             this.btnFP.TabIndex = 3;
             this.btnFP.Text = "Familia";
+            this.btnFP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFP.UseVisualStyleBackColor = true;
             this.btnFP.Click += new System.EventHandler(this.btnFP_Click);
             // 
@@ -227,6 +234,7 @@
             this.btnTP.Size = new System.Drawing.Size(196, 40);
             this.btnTP.TabIndex = 2;
             this.btnTP.Text = "Tipo Producto";
+            this.btnTP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTP.UseVisualStyleBackColor = true;
             this.btnTP.Click += new System.EventHandler(this.btnTP_Click);
             // 
@@ -243,6 +251,7 @@
             this.btnTU.Size = new System.Drawing.Size(196, 40);
             this.btnTU.TabIndex = 1;
             this.btnTU.Text = "Tipo Usuario";
+            this.btnTU.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTU.UseVisualStyleBackColor = true;
             this.btnTU.Click += new System.EventHandler(this.btnTU_Click);
             // 
@@ -259,6 +268,7 @@
             this.btnProductos.Size = new System.Drawing.Size(196, 40);
             this.btnProductos.TabIndex = 0;
             this.btnProductos.Text = "Productos";
+            this.btnProductos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProductos.UseVisualStyleBackColor = true;
             this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
             // 
@@ -275,6 +285,7 @@
             this.btnUsuarios.Size = new System.Drawing.Size(196, 40);
             this.btnUsuarios.TabIndex = 0;
             this.btnUsuarios.Text = "Usuarios";
+            this.btnUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnUsuarios.UseVisualStyleBackColor = true;
             this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
@@ -289,7 +300,7 @@
             this.Controls.Add(this.BarraSuperior);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
-            this.Text = "t";
+            this.Text = "Farmacia";
             this.BarraSuperior.ResumeLayout(false);
             this.panelPrincipal.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbLogoPrincipal)).EndInit();
