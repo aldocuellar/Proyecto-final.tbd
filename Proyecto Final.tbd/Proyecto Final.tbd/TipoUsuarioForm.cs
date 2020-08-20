@@ -17,9 +17,16 @@ namespace Proyecto_Final.tbd
             InitializeComponent();
         }
 
-        private void btnInsertProductos_Click(object sender, EventArgs e)
+        private void btnCerrarTU_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnInsertTU_Click(object sender, EventArgs e)
         {
 
         }
+
+        
     }
 }

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvTU = new System.Windows.Forms.DataGridView();
+            this.dgvProductos = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnCerrarTU = new System.Windows.Forms.Button();
             this.lblProductos = new System.Windows.Forms.Label();
@@ -40,22 +40,22 @@
             this.tbNombreTUInsert = new System.Windows.Forms.TextBox();
             this.tbIdTUInsert = new System.Windows.Forms.TextBox();
             this.tabModTU = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tbNombreTUMod = new System.Windows.Forms.TextBox();
+            this.tbIdTUMod = new System.Windows.Forms.TextBox();
             this.btnModTU = new System.Windows.Forms.Button();
             this.tabDropTU = new System.Windows.Forms.TabPage();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.tbNombreTUDrop = new System.Windows.Forms.TextBox();
+            this.tbIdTUDrop = new System.Windows.Forms.TextBox();
             this.btnDropTU = new System.Windows.Forms.Button();
             this.tabSelectTU = new System.Windows.Forms.TabPage();
             this.lblConsulta = new System.Windows.Forms.Label();
             this.cbSelectTU = new System.Windows.Forms.ComboBox();
             this.btnSelectTU = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tbNombreTUMod = new System.Windows.Forms.TextBox();
-            this.tbIdTUMod = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tbNombreTUDrop = new System.Windows.Forms.TextBox();
-            this.tbIdTUDrop = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTU)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
             this.panel1.SuspendLayout();
             this.tabTU.SuspendLayout();
             this.tabInsertTU.SuspendLayout();
@@ -64,13 +64,13 @@
             this.tabSelectTU.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dgvTU
+            // dgvProductos
             // 
-            this.dgvTU.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTU.Location = new System.Drawing.Point(4, 395);
-            this.dgvTU.Name = "dgvTU";
-            this.dgvTU.Size = new System.Drawing.Size(769, 150);
-            this.dgvTU.TabIndex = 6;
+            this.dgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProductos.Location = new System.Drawing.Point(4, 395);
+            this.dgvProductos.Name = "dgvProductos";
+            this.dgvProductos.Size = new System.Drawing.Size(769, 150);
+            this.dgvProductos.TabIndex = 6;
             // 
             // panel1
             // 
@@ -96,6 +96,7 @@
             this.btnCerrarTU.TabIndex = 3;
             this.btnCerrarTU.Text = "X";
             this.btnCerrarTU.UseVisualStyleBackColor = false;
+            this.btnCerrarTU.Click += new System.EventHandler(this.btnCerrarTU_Click);
             // 
             // lblProductos
             // 
@@ -144,6 +145,7 @@
             this.btnInsertTU.TabIndex = 38;
             this.btnInsertTU.Text = "Insertar Datos";
             this.btnInsertTU.UseVisualStyleBackColor = true;
+            this.btnInsertTU.Click += new System.EventHandler(this.btnInsertTU_Click);
             // 
             // lblNombreDeUsuario
             // 
@@ -192,6 +194,39 @@
             this.tabModTU.Text = "Modificar";
             this.tabModTU.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(327, 115);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(107, 13);
+            this.label1.TabIndex = 59;
+            this.label1.Text = "Nombre Tipo Usuario";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(341, 42);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(79, 13);
+            this.label2.TabIndex = 58;
+            this.label2.Text = "Id Tipo Usuario";
+            // 
+            // tbNombreTUMod
+            // 
+            this.tbNombreTUMod.Enabled = false;
+            this.tbNombreTUMod.Location = new System.Drawing.Point(306, 141);
+            this.tbNombreTUMod.Name = "tbNombreTUMod";
+            this.tbNombreTUMod.Size = new System.Drawing.Size(150, 20);
+            this.tbNombreTUMod.TabIndex = 57;
+            // 
+            // tbIdTUMod
+            // 
+            this.tbIdTUMod.Location = new System.Drawing.Point(350, 66);
+            this.tbIdTUMod.Name = "tbIdTUMod";
+            this.tbIdTUMod.Size = new System.Drawing.Size(58, 20);
+            this.tbIdTUMod.TabIndex = 56;
+            // 
             // btnModTU
             // 
             this.btnModTU.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -215,6 +250,39 @@
             this.tabDropTU.TabIndex = 2;
             this.tabDropTU.Text = "Eliminar";
             this.tabDropTU.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(330, 121);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(107, 13);
+            this.label3.TabIndex = 63;
+            this.label3.Text = "Nombre Tipo Usuario";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(344, 48);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(79, 13);
+            this.label4.TabIndex = 62;
+            this.label4.Text = "Id Tipo Usuario";
+            // 
+            // tbNombreTUDrop
+            // 
+            this.tbNombreTUDrop.Enabled = false;
+            this.tbNombreTUDrop.Location = new System.Drawing.Point(309, 147);
+            this.tbNombreTUDrop.Name = "tbNombreTUDrop";
+            this.tbNombreTUDrop.Size = new System.Drawing.Size(150, 20);
+            this.tbNombreTUDrop.TabIndex = 61;
+            // 
+            // tbIdTUDrop
+            // 
+            this.tbIdTUDrop.Location = new System.Drawing.Point(353, 72);
+            this.tbIdTUDrop.Name = "tbIdTUDrop";
+            this.tbIdTUDrop.Size = new System.Drawing.Size(58, 20);
+            this.tbIdTUDrop.TabIndex = 60;
             // 
             // btnDropTU
             // 
@@ -266,85 +334,19 @@
             this.btnSelectTU.Text = "Consultar";
             this.btnSelectTU.UseVisualStyleBackColor = true;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(327, 115);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 13);
-            this.label1.TabIndex = 59;
-            this.label1.Text = "Nombre Tipo Usuario";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(341, 42);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 13);
-            this.label2.TabIndex = 58;
-            this.label2.Text = "Id Tipo Usuario";
-            // 
-            // tbNombreTUMod
-            // 
-            this.tbNombreTUMod.Enabled = false;
-            this.tbNombreTUMod.Location = new System.Drawing.Point(306, 141);
-            this.tbNombreTUMod.Name = "tbNombreTUMod";
-            this.tbNombreTUMod.Size = new System.Drawing.Size(150, 20);
-            this.tbNombreTUMod.TabIndex = 57;
-            // 
-            // tbIdTUMod
-            // 
-            this.tbIdTUMod.Location = new System.Drawing.Point(350, 66);
-            this.tbIdTUMod.Name = "tbIdTUMod";
-            this.tbIdTUMod.Size = new System.Drawing.Size(58, 20);
-            this.tbIdTUMod.TabIndex = 56;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(330, 121);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 13);
-            this.label3.TabIndex = 63;
-            this.label3.Text = "Nombre Tipo Usuario";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(344, 48);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 13);
-            this.label4.TabIndex = 62;
-            this.label4.Text = "Id Tipo Usuario";
-            // 
-            // tbNombreTUDrop
-            // 
-            this.tbNombreTUDrop.Enabled = false;
-            this.tbNombreTUDrop.Location = new System.Drawing.Point(309, 147);
-            this.tbNombreTUDrop.Name = "tbNombreTUDrop";
-            this.tbNombreTUDrop.Size = new System.Drawing.Size(150, 20);
-            this.tbNombreTUDrop.TabIndex = 61;
-            // 
-            // tbIdTUDrop
-            // 
-            this.tbIdTUDrop.Location = new System.Drawing.Point(353, 72);
-            this.tbIdTUDrop.Name = "tbIdTUDrop";
-            this.tbIdTUDrop.Size = new System.Drawing.Size(58, 20);
-            this.tbIdTUDrop.TabIndex = 60;
-            // 
             // TipoUsuarioForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(777, 547);
-            this.Controls.Add(this.dgvTU);
+            this.Controls.Add(this.dgvProductos);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tabTU);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TipoUsuarioForm";
             this.Text = "TipoUsuarioForm";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTU)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tabTU.ResumeLayout(false);
@@ -362,7 +364,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvTU;
+        private System.Windows.Forms.DataGridView dgvProductos;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnCerrarTU;
         private System.Windows.Forms.Label lblProductos;
