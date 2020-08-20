@@ -16,5 +16,10 @@ namespace Proyecto_Final.tbd
         {
             InitializeComponent();
         }
+
+        private void btnCerrarVenta_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

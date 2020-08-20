@@ -226,6 +226,7 @@
             this.tbIdTUMod.Name = "tbIdTUMod";
             this.tbIdTUMod.Size = new System.Drawing.Size(58, 20);
             this.tbIdTUMod.TabIndex = 56;
+            this.tbIdTUMod.TextChanged += new System.EventHandler(this.tbIdTUMod_TextChanged);
             // 
             // btnModTU
             // 

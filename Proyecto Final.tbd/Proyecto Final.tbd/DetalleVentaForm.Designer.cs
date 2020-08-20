@@ -158,14 +158,14 @@
             // 
             // tbPrecioDVInsert
             // 
-            this.tbPrecioDVInsert.Location = new System.Drawing.Point(433, 159);
+            this.tbPrecioDVInsert.Location = new System.Drawing.Point(433, 137);
             this.tbPrecioDVInsert.Name = "tbPrecioDVInsert";
             this.tbPrecioDVInsert.Size = new System.Drawing.Size(58, 20);
             this.tbPrecioDVInsert.TabIndex = 49;
             // 
             // tbCantidadDVInsert
             // 
-            this.tbCantidadDVInsert.Location = new System.Drawing.Point(274, 159);
+            this.tbCantidadDVInsert.Location = new System.Drawing.Point(274, 137);
             this.tbCantidadDVInsert.Name = "tbCantidadDVInsert";
             this.tbCantidadDVInsert.Size = new System.Drawing.Size(58, 20);
             this.tbCantidadDVInsert.TabIndex = 48;
@@ -173,7 +173,7 @@
             // cbIdPDVInsert
             // 
             this.cbIdPDVInsert.FormattingEnabled = true;
-            this.cbIdPDVInsert.Location = new System.Drawing.Point(433, 96);
+            this.cbIdPDVInsert.Location = new System.Drawing.Point(433, 74);
             this.cbIdPDVInsert.Name = "cbIdPDVInsert";
             this.cbIdPDVInsert.Size = new System.Drawing.Size(58, 21);
             this.cbIdPDVInsert.TabIndex = 47;
@@ -181,7 +181,7 @@
             // cbTicketDVInsert
             // 
             this.cbTicketDVInsert.FormattingEnabled = true;
-            this.cbTicketDVInsert.Location = new System.Drawing.Point(274, 96);
+            this.cbTicketDVInsert.Location = new System.Drawing.Point(274, 74);
             this.cbTicketDVInsert.Name = "cbTicketDVInsert";
             this.cbTicketDVInsert.Size = new System.Drawing.Size(58, 21);
             this.cbTicketDVInsert.TabIndex = 46;
@@ -189,7 +189,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(444, 143);
+            this.label7.Location = new System.Drawing.Point(444, 121);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(37, 13);
             this.label7.TabIndex = 44;
@@ -198,7 +198,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(277, 143);
+            this.label6.Location = new System.Drawing.Point(277, 121);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(49, 13);
             this.label6.TabIndex = 43;
@@ -207,7 +207,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(430, 80);
+            this.label5.Location = new System.Drawing.Point(430, 58);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(62, 13);
             this.label5.TabIndex = 42;
@@ -226,7 +226,7 @@
             // lblNombreDeUsuario
             // 
             this.lblNombreDeUsuario.AutoSize = true;
-            this.lblNombreDeUsuario.Location = new System.Drawing.Point(284, 80);
+            this.lblNombreDeUsuario.Location = new System.Drawing.Point(284, 58);
             this.lblNombreDeUsuario.Name = "lblNombreDeUsuario";
             this.lblNombreDeUsuario.Size = new System.Drawing.Size(37, 13);
             this.lblNombreDeUsuario.TabIndex = 29;

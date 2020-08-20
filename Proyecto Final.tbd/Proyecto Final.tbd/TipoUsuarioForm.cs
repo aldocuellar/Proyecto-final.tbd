@@ -15,6 +15,7 @@ namespace Proyecto_Final.tbd
         public TipoUsuarioForm()
         {
             InitializeComponent();
+            ActualizarGridView();
         }
 
         private void ActualizarGridView()
@@ -39,7 +40,69 @@ namespace Proyecto_Final.tbd
 
         private void btnInsertTU_Click(object sender, EventArgs e)
         {
+            if (tbIdTUInsert.Text != null && !string.IsNullOrEmpty(tbNombreTUInsert.Text))
+            {
+                int id = Convert.ToInt32(tbNombreTUInsert.Text);
+                ejemplofarmaciaEntities datos = new ejemplofarmaciaEntities();
+                Tipo_Usuario registro = datos.Tipo_Usuario.SingleOrDefault(p => p.Id_Tipo_Usuario == id);
+                if (registro == null)
+                {
+                    Tipo_Usuario newRegistro = new Tipo_Usuario
+                    {
+                        Id_Tipo_Usuario = Convert.ToInt32(tbIdTUInsert.Text),
+                        Nombre_TU = tbNombreTUInsert.Text,
+                    };
+                    datos.Tipo_Usuario.Add(newRegistro);
+                    datos.SaveChanges();
+                    ActualizarGridView();
+                    MessageBox.Show("El tipo de usuario se agregó con éxito", "Advertencia");
+                }
+                else
+                {
+                    MessageBox.Show("El tipo de usuario ya existe", "Error");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Llene todos los espacios", "Error");
+            }
+        }
 
+        private void tbIdTUMod_TextChanged(object sender, EventArgs e)
+        {/*
+            if ((!String.IsNullOrWhiteSpace(tbIdTUMod.Text)) || (!String.IsNullOrEmpty(tbNombreTUMod.Text)))
+            {
+                int id = Convert.ToInt32(tbIdTUMod.Text);
+                ejemplofarmaciaEntities datos = new ejemplofarmaciaEntities();
+                IQueryable<Usuario> RegistrosUsuarios = from tabla in datos.Usuario
+                                                        where tabla.Id_Usuario == id
+                                                        select tabla;
+                List<Usuario> Usuario = RegistrosUsuarios.ToList();
+                if (Usuario.Count > 0)
+                {
+                    var first = Usuario[0];
+                    tbNombreDeUsuarioMod.Text = first.Nombre_Usuario;
+                    tbPasswordMod.Text = first.Contraseña;
+                    tbApPaternoMod.Text = first.Ap_Paterno;
+                    tbApMaternoMod.Text = first.Ap_Materno;
+                    tbNombreUsMod.Text = first.Nombre;
+                    dtpFechaNacMod.Value = first.Fecha_Nacimiento;
+                    cbGeneroMod.SelectedItem = first.Genero;
+                    cbIdTUMod.SelectedItem = first.Id_Tipo_Usuario_FK;
+                }
+                else
+                {
+                    tbIdUsuarioMod.Clear();
+                    tbNombreDeUsuarioMod.Clear();
+                    tbPasswordMod.Clear();
+                    tbApPaternoMod.Clear();
+                    tbApMaternoMod.Clear();
+                    tbNombreUsMod.Clear();
+                    dtpFechaNacMod.Value = DateTime.Today;
+                    cbGeneroMod.SelectedIndex = 0;
+                    cbIdTUMod.SelectedIndex = 0;
+                }
+            }*/
         }
 
         private void btnModTU_Click(object sender, EventArgs e)
@@ -56,5 +119,6 @@ namespace Proyecto_Final.tbd
         {
 
         }
+
     }
 }
