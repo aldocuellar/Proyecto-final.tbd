@@ -236,6 +236,7 @@
             this.btnModTU.TabIndex = 55;
             this.btnModTU.Text = "Modificar Datos";
             this.btnModTU.UseVisualStyleBackColor = true;
+            this.btnModTU.Click += new System.EventHandler(this.btnModTU_Click);
             // 
             // tabDropTU
             // 
@@ -293,6 +294,7 @@
             this.btnDropTU.TabIndex = 55;
             this.btnDropTU.Text = "Eliminar Datos";
             this.btnDropTU.UseVisualStyleBackColor = true;
+            this.btnDropTU.Click += new System.EventHandler(this.btnDropTU_Click);
             // 
             // tabSelectTU
             // 
@@ -333,6 +335,7 @@
             this.btnSelectTU.TabIndex = 3;
             this.btnSelectTU.Text = "Consultar";
             this.btnSelectTU.UseVisualStyleBackColor = true;
+            this.btnSelectTU.Click += new System.EventHandler(this.btnSelectTU_Click);
             // 
             // TipoUsuarioForm
             // 

@@ -17,6 +17,21 @@ namespace Proyecto_Final.tbd
             InitializeComponent();
         }
 
+        private void ActualizarGridView()
+        {
+            ejemplofarmaciaEntities datos = new ejemplofarmaciaEntities();
+            var db = (from u in datos.Tipo_Usuario
+                      select new
+                      {
+                          Id_Tipo_Usuario = u.Id_Tipo_Usuario,
+                          Tipo_Usuario = u.Nombre_TU,
+                      }).ToList();
+
+            dgvTU.DataSource = db;
+            dgvTU.Refresh();
+            dgvTU.ClearSelection();
+        }
+
         private void btnCerrarTU_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -27,6 +42,19 @@ namespace Proyecto_Final.tbd
 
         }
 
-        
+        private void btnModTU_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDropTU_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSelectTU_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
