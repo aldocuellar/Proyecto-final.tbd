@@ -162,8 +162,20 @@
     <Compile Include="VentaForm.Designer.cs">
       <DependentUpon>VentaForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DetalleVentaForm.resx">
+      <DependentUpon>DetalleVentaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EntradasForm.resx">
+      <DependentUpon>EntradasForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FamiliaForm.resx">
+      <DependentUpon>FamiliaForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarcaForm.resx">
+      <DependentUpon>MarcaForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProductoForm.resx">
       <DependentUpon>ProductoForm.cs</DependentUpon>
@@ -177,8 +189,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TipoProductoForm.resx">
+      <DependentUpon>TipoProductoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipoUsuarioForm.resx">
+      <DependentUpon>TipoUsuarioForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UsuarioForm.resx">
       <DependentUpon>UsuarioForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentaForm.resx">
+      <DependentUpon>VentaForm.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>

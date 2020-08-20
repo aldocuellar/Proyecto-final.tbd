@@ -32,3 +32,10 @@ C:\Users\hit_h\Documents\GitHub\Proyecto-final.tbd\Proyecto Final.tbd\Proyecto F
 C:\Users\hit_h\Documents\GitHub\Proyecto-final.tbd\Proyecto Final.tbd\Proyecto Final.tbd\obj\Debug\Proyecto Final.tbd.csproj.CopyComplete
 C:\Users\hit_h\Documents\GitHub\Proyecto-final.tbd\Proyecto Final.tbd\Proyecto Final.tbd\obj\Debug\Proyecto Final.tbd.exe
 C:\Users\hit_h\Documents\GitHub\Proyecto-final.tbd\Proyecto Final.tbd\Proyecto Final.tbd\obj\Debug\Proyecto Final.tbd.pdb
+C:\Users\hit_h\Documents\GitHub\Proyecto-final.tbd\Proyecto Final.tbd\Proyecto Final.tbd\obj\Debug\Proyecto_Final.tbd.DetalleVentaForm.resources
+C:\Users\hit_h\Documents\GitHub\Proyecto-final.tbd\Proyecto Final.tbd\Proyecto Final.tbd\obj\Debug\Proyecto_Final.tbd.EntradasForm.resources
+C:\Users\hit_h\Documents\GitHub\Proyecto-final.tbd\Proyecto Final.tbd\Proyecto Final.tbd\obj\Debug\Proyecto_Final.tbd.FamiliaForm.resources
+C:\Users\hit_h\Documents\GitHub\Proyecto-final.tbd\Proyecto Final.tbd\Proyecto Final.tbd\obj\Debug\Proyecto_Final.tbd.MarcaForm.resources
+C:\Users\hit_h\Documents\GitHub\Proyecto-final.tbd\Proyecto Final.tbd\Proyecto Final.tbd\obj\Debug\Proyecto_Final.tbd.TipoProductoForm.resources
+C:\Users\hit_h\Documents\GitHub\Proyecto-final.tbd\Proyecto Final.tbd\Proyecto Final.tbd\obj\Debug\Proyecto_Final.tbd.TipoUsuarioForm.resources
+C:\Users\hit_h\Documents\GitHub\Proyecto-final.tbd\Proyecto Final.tbd\Proyecto Final.tbd\obj\Debug\Proyecto_Final.tbd.VentaForm.resources

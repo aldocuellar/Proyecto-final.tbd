@@ -90,13 +90,13 @@
             this.cbIdTUDrop = new System.Windows.Forms.ComboBox();
             this.cbGeneroDrop = new System.Windows.Forms.ComboBox();
             this.tabSelectUsuario = new System.Windows.Forms.TabPage();
+            this.lblConsulta = new System.Windows.Forms.Label();
+            this.cbSelectUsuarios = new System.Windows.Forms.ComboBox();
+            this.btnSelectUsuarios = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnCerrarUsuarios = new System.Windows.Forms.Button();
             this.lblUsuarios = new System.Windows.Forms.Label();
             this.dgvUsuarios = new System.Windows.Forms.DataGridView();
-            this.btnSelectUsuarios = new System.Windows.Forms.Button();
-            this.cbSelectUsuarios = new System.Windows.Forms.ComboBox();
-            this.lblConsulta = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabInsertUsuario.SuspendLayout();
             this.tabModUsuario.SuspendLayout();
@@ -706,6 +706,36 @@
             this.tabSelectUsuario.Text = "Consultar";
             this.tabSelectUsuario.UseVisualStyleBackColor = true;
             // 
+            // lblConsulta
+            // 
+            this.lblConsulta.AutoSize = true;
+            this.lblConsulta.Location = new System.Drawing.Point(319, 59);
+            this.lblConsulta.Name = "lblConsulta";
+            this.lblConsulta.Size = new System.Drawing.Size(87, 13);
+            this.lblConsulta.TabIndex = 2;
+            this.lblConsulta.Text = "Consultar Ventas";
+            // 
+            // cbSelectUsuarios
+            // 
+            this.cbSelectUsuarios.FormattingEnabled = true;
+            this.cbSelectUsuarios.Location = new System.Drawing.Point(301, 88);
+            this.cbSelectUsuarios.Name = "cbSelectUsuarios";
+            this.cbSelectUsuarios.Size = new System.Drawing.Size(121, 21);
+            this.cbSelectUsuarios.TabIndex = 1;
+            // 
+            // btnSelectUsuarios
+            // 
+            this.btnSelectUsuarios.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.btnSelectUsuarios.FlatAppearance.BorderSize = 0;
+            this.btnSelectUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelectUsuarios.Location = new System.Drawing.Point(323, 148);
+            this.btnSelectUsuarios.Name = "btnSelectUsuarios";
+            this.btnSelectUsuarios.Size = new System.Drawing.Size(75, 23);
+            this.btnSelectUsuarios.TabIndex = 0;
+            this.btnSelectUsuarios.Text = "Consultar";
+            this.btnSelectUsuarios.UseVisualStyleBackColor = true;
+            this.btnSelectUsuarios.Click += new System.EventHandler(this.btnSelectUsuarios_Click);
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.btnCerrarUsuarios);
@@ -751,40 +781,11 @@
             this.dgvUsuarios.Size = new System.Drawing.Size(769, 150);
             this.dgvUsuarios.TabIndex = 2;
             // 
-            // btnSelectUsuarios
-            // 
-            this.btnSelectUsuarios.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
-            this.btnSelectUsuarios.FlatAppearance.BorderSize = 0;
-            this.btnSelectUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSelectUsuarios.Location = new System.Drawing.Point(323, 148);
-            this.btnSelectUsuarios.Name = "btnSelectUsuarios";
-            this.btnSelectUsuarios.Size = new System.Drawing.Size(75, 23);
-            this.btnSelectUsuarios.TabIndex = 0;
-            this.btnSelectUsuarios.Text = "Consultar";
-            this.btnSelectUsuarios.UseVisualStyleBackColor = true;
-            this.btnSelectUsuarios.Click += new System.EventHandler(this.btnSelectUsuarios_Click);
-            // 
-            // cbSelectUsuarios
-            // 
-            this.cbSelectUsuarios.FormattingEnabled = true;
-            this.cbSelectUsuarios.Location = new System.Drawing.Point(301, 88);
-            this.cbSelectUsuarios.Name = "cbSelectUsuarios";
-            this.cbSelectUsuarios.Size = new System.Drawing.Size(121, 21);
-            this.cbSelectUsuarios.TabIndex = 1;
-            // 
-            // lblConsulta
-            // 
-            this.lblConsulta.AutoSize = true;
-            this.lblConsulta.Location = new System.Drawing.Point(319, 59);
-            this.lblConsulta.Name = "lblConsulta";
-            this.lblConsulta.Size = new System.Drawing.Size(87, 13);
-            this.lblConsulta.TabIndex = 2;
-            this.lblConsulta.Text = "Consultar Ventas";
-            // 
             // UsuarioForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(777, 547);
             this.Controls.Add(this.dgvUsuarios);
             this.Controls.Add(this.panel1);

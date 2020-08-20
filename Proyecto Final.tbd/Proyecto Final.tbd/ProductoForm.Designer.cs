@@ -84,13 +84,13 @@
             this.cbIdMPDrop = new System.Windows.Forms.ComboBox();
             this.cbIdFPDrop = new System.Windows.Forms.ComboBox();
             this.tabSelectProducto = new System.Windows.Forms.TabPage();
+            this.lblConsulta = new System.Windows.Forms.Label();
+            this.cbSelectProductos = new System.Windows.Forms.ComboBox();
+            this.btnSelectProductos = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnCerrarProductos = new System.Windows.Forms.Button();
             this.lblProductos = new System.Windows.Forms.Label();
             this.dgvProductos = new System.Windows.Forms.DataGridView();
-            this.lblConsulta = new System.Windows.Forms.Label();
-            this.cbSelectProductos = new System.Windows.Forms.ComboBox();
-            this.btnSelectProductos = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabInsertProducto.SuspendLayout();
             this.tabModProducto.SuspendLayout();
@@ -645,6 +645,35 @@
             this.tabSelectProducto.Text = "Consultar";
             this.tabSelectProducto.UseVisualStyleBackColor = true;
             // 
+            // lblConsulta
+            // 
+            this.lblConsulta.AutoSize = true;
+            this.lblConsulta.Location = new System.Drawing.Point(328, 99);
+            this.lblConsulta.Name = "lblConsulta";
+            this.lblConsulta.Size = new System.Drawing.Size(109, 13);
+            this.lblConsulta.TabIndex = 5;
+            this.lblConsulta.Text = "Consultar por Nombre";
+            // 
+            // cbSelectProductos
+            // 
+            this.cbSelectProductos.FormattingEnabled = true;
+            this.cbSelectProductos.Location = new System.Drawing.Point(324, 128);
+            this.cbSelectProductos.Name = "cbSelectProductos";
+            this.cbSelectProductos.Size = new System.Drawing.Size(121, 21);
+            this.cbSelectProductos.TabIndex = 4;
+            // 
+            // btnSelectProductos
+            // 
+            this.btnSelectProductos.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.btnSelectProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelectProductos.Location = new System.Drawing.Point(344, 188);
+            this.btnSelectProductos.Name = "btnSelectProductos";
+            this.btnSelectProductos.Size = new System.Drawing.Size(75, 23);
+            this.btnSelectProductos.TabIndex = 3;
+            this.btnSelectProductos.Text = "Consultar";
+            this.btnSelectProductos.UseVisualStyleBackColor = true;
+            this.btnSelectProductos.Click += new System.EventHandler(this.btnSelectProductos_Click);
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.btnCerrarProductos);
@@ -690,39 +719,11 @@
             this.dgvProductos.Size = new System.Drawing.Size(769, 150);
             this.dgvProductos.TabIndex = 3;
             // 
-            // lblConsulta
-            // 
-            this.lblConsulta.AutoSize = true;
-            this.lblConsulta.Location = new System.Drawing.Point(328, 99);
-            this.lblConsulta.Name = "lblConsulta";
-            this.lblConsulta.Size = new System.Drawing.Size(109, 13);
-            this.lblConsulta.TabIndex = 5;
-            this.lblConsulta.Text = "Consultar por Nombre";
-            // 
-            // cbSelectProductos
-            // 
-            this.cbSelectProductos.FormattingEnabled = true;
-            this.cbSelectProductos.Location = new System.Drawing.Point(324, 128);
-            this.cbSelectProductos.Name = "cbSelectProductos";
-            this.cbSelectProductos.Size = new System.Drawing.Size(121, 21);
-            this.cbSelectProductos.TabIndex = 4;
-            // 
-            // btnSelectProductos
-            // 
-            this.btnSelectProductos.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
-            this.btnSelectProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSelectProductos.Location = new System.Drawing.Point(344, 188);
-            this.btnSelectProductos.Name = "btnSelectProductos";
-            this.btnSelectProductos.Size = new System.Drawing.Size(75, 23);
-            this.btnSelectProductos.TabIndex = 3;
-            this.btnSelectProductos.Text = "Consultar";
-            this.btnSelectProductos.UseVisualStyleBackColor = true;
-            this.btnSelectProductos.Click += new System.EventHandler(this.btnSelectProductos_Click);
-            // 
             // ProductoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(777, 547);
             this.Controls.Add(this.dgvProductos);
             this.Controls.Add(this.panel1);
