@@ -115,7 +115,7 @@
             this.tabTU.Controls.Add(this.tabModTU);
             this.tabTU.Controls.Add(this.tabDropTU);
             this.tabTU.Controls.Add(this.tabSelectTU);
-            this.tabTU.Location = new System.Drawing.Point(0, 56);
+            this.tabTU.Location = new System.Drawing.Point(0, 54);
             this.tabTU.Name = "tabTU";
             this.tabTU.SelectedIndex = 0;
             this.tabTU.Size = new System.Drawing.Size(777, 337);
